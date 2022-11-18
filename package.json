@@ -1,0 +1,78 @@
+{
+    "name": "framework-pc",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "amfe-flexible": "^2.2.1",
+        "axios": "^1.1.3",
+        "core-js": "^3.8.3",
+        "lib-flexible": "^0.3.2",
+        "postcss-pxtorem": "^6.0.0",
+        "vue": "^2.6.14",
+        "vue-i18n": "^9.2.2",
+        "vue-router": "^3.5.1",
+        "vuex": "^3.6.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/eslint-parser": "^7.12.16",
+        "@vue/cli-plugin-babel": "~5.0.0",
+        "@vue/cli-plugin-eslint": "~5.0.0",
+        "@vue/cli-plugin-router": "~5.0.0",
+        "@vue/cli-plugin-vuex": "~5.0.0",
+        "@vue/cli-service": "~5.0.0",
+        "@vue/eslint-config-standard": "^6.1.0",
+        "eslint": "^7.32.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-vue": "^8.0.3",
+        "less": "^4.0.0",
+        "less-loader": "^8.0.0",
+        "vite": "^3.1.8",
+        "vite-plugin-vue2": "^2.0.2",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/standard"
+        ],
+        "parserOptions": {
+            "parser": "@babel/eslint-parser"
+        },
+        "rules": {
+            "no-bitwise": ["error", { "allow": ["~"] }],
+            "linebreak-style": [0 ,"error", "windows"],
+            "prefer-destructuring": "off",
+            "no-mixed-operators": "off",
+            "func-names": "off",
+            "no-param-reassign": "off",
+            "indent": "off",
+            "max-len": ["warn", 200],
+            "import/extensions": ["error", "always", {
+                "js": "never",
+                "vue": "never"
+            }],
+            "vue/script-indent": ["warn", 4],
+            "vue/html-indent": ["warn", 2],
+            "vue/html-closing-bracket-newline": "off",
+            "import/no-extraneous-dependencies": ["error", {
+                "optionalDependencies": ["test/unit/index.js"]
+            }]
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}
